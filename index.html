@@ -1,105 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steelworx | Premium Steel Construction & Design</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .heading { font-family: 'Playfair Display', sans-serif; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('https://picsum.photos/id/1015/2000/1200') center/cover fixed; }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Steelworx.ca | Custom Design & Fabrication</title>
+
+<meta name="description" content="Steelworx.ca specializes in custom-designed steel and architectural solutions, bringing concepts to life through innovative design, precision fabrication, and expert execution.">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
 </head>
-<body class="bg-zinc-950 text-zinc-200">
 
-    <!-- HEADER -->
-    <header class="fixed top-0 w-full bg-zinc-950 border-b border-zinc-800 z-50">
-        <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="YOUR-LOGO.svg" alt="Steelworx" class="h-12">
-                <div class="text-3xl font-bold tracking-tighter heading">STEELWORX</div>
-            </div>
-            <nav class="flex gap-10 text-sm uppercase tracking-widest font-medium">
-                <a href="#services" class="hover:text-amber-400 transition">Services</a>
-                <a href="#projects" class="hover:text-amber-400 transition">Projects</a>
-                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
-            </nav>
-            <img src="https://flagcdn.com/w40/ca.png" alt="Canada" class="h-6">
-        </div>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero min-h-screen flex items-center text-center">
-        <div class="max-w-5xl mx-auto px-6 pt-20">
-            <h1 class="text-7xl md:text-8xl font-bold heading tracking-tighter mb-6">STEEL THAT DEFINES CANADA</h1>
-            <p class="text-3xl text-zinc-300 max-w-3xl mx-auto">Premium architectural design and steel construction delivered nationwide.</p>
-            <a href="#contact" class="mt-12 inline-block bg-amber-600 hover:bg-amber-500 text-black font-bold px-16 py-6 text-xl rounded-2xl transition">BEGIN YOUR PROJECT</a>
-        </div>
-    </section>
+<body>
 
-    <!-- SERVICES -->
-    <section id="services" class="py-28 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-8">
-            <h2 class="text-6xl font-bold heading text-center mb-20">What We Deliver</h2>
-            <div class="max-w-3xl mx-auto prose prose-invert text-lg text-center">
-                <p>We provide architectural consulting, 3D modeling, design, construction, and full project management services to clients across Canada.</p>
-                <p class="text-amber-400">We specialize in energy-efficient, climate-responsive steel projects featuring renewable energy integration, automation, immersive audio/video systems, agricultural infrastructure, and advanced high-security solutions.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- PROJECTS - Ready for 8 Photos -->
-    <section id="projects" class="py-28 bg-black">
-        <div class="max-w-7xl mx-auto px-8">
-            <h2 class="text-6xl font-bold heading text-center mb-20">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- HEADER -->
 
-                <div class="group">
-                    <img src="https://picsum.photos/id/1015/800/600" class="w-full h-64 object-cover rounded-3xl mb-6 group-hover:scale-105 transition" alt="Project">
-                    <h3 class="text-xl font-semibold">Luxury Mountain Residence</h3>
-                </div>
-                <div class="group">
-                    <img src="https://picsum.photos/id/201/800/600" class="w-full h-64 object-cover rounded-3xl mb-6 group-hover:scale-105 transition" alt="Project">
-                    <h3 class="text-xl font-semibold">Industrial Warehouse Complex</h3>
-                </div>
-                <div class="group">
-                    <img src="https://picsum.photos/id/1060/800/600" class="w-full h-64 object-cover rounded-3xl mb-6 group-hover:scale-105 transition" alt="Project">
-                    <h3 class="text-xl font-semibold">Agricultural Processing Facility</h3>
-                </div>
-                <div class="group">
-                    <img src="https://picsum.photos/id/133/800/600" class="w-full h-64 object-cover rounded-3xl mb-6 group-hover:scale-105 transition" alt="Project">
-                    <h3 class="text-xl font-semibold">High-Security Corporate Campus</h3>
-                </div>
+<header>
 
-                <!-- Add your 4 more photos here (copy the block above) -->
-            </div>
-        </div>
-    </section>
+<div class="container header-inner">
 
-    <!-- CONTACT -->
-    <section id="contact" class="py-28 bg-zinc-900">
-        <div class="max-w-2xl mx-auto px-6">
-            <h2 class="text-6xl font-bold heading text-center mb-12">Let's Build Something Great</h2>
-            
-            <!-- FORMSPREE FORM -->
-            <form action="https://formspree.io/f/mgojrabl" method="POST" class="space-y-8">
-                <input type="text" name="name" placeholder="Your Name" required class="w-full px-8 py-6 bg-zinc-800 border border-zinc-700 rounded-2xl focus:border-amber-500 outline-none text-lg">
-                <input type="email" name="email" placeholder="Email Address" required class="w-full px-8 py-6 bg-zinc-800 border border-zinc-700 rounded-2xl focus:border-amber-500 outline-none text-lg">
-                <input type="tel" name="phone" placeholder="Phone Number" class="w-full px-8 py-6 bg-zinc-800 border border-zinc-700 rounded-2xl focus:border-amber-500 outline-none text-lg">
-                <textarea name="message" rows="6" placeholder="Tell us about your project..." required class="w-full px-8 py-6 bg-zinc-800 border border-zinc-700 rounded-2xl focus:border-amber-500 outline-none text-lg"></textarea>
-                
-                <button type="submit" class="w-full py-7 bg-amber-600 hover:bg-amber-500 text-black font-bold text-xl rounded-3xl transition">
-                    SEND INQUIRY
-                </button>
-            </form>
-        </div>
-    </section>
 
-    <footer class="bg-black py-12 text-center text-zinc-500">
-        <p>© 2026 Steelworx Construction • Canada</p>
-    </footer>
+<div class="logo">
+
+<div class="logo-main">
+Steelworx.ca
+</div>
+
+<div class="logo-sub">
+CUSTOM DESIGN • FABRICATION • EXECUTION
+</div>
+
+</div>
+
+
+<a href="#contact" class="header-button">
+CONTACT
+</a>
+
+
+</div>
+
+</header>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="container hero-content">
+
+
+<div class="eyebrow">
+CUSTOM DESIGN SOLUTIONS
+</div>
+
+
+<h1>
+IMAGINED WITH PURPOSE.
+<br>
+CRAFTED WITH PRECISION.
+</h1>
+
+
+<p>
+Steelworx.ca specializes in custom-designed steel and architectural solutions, bringing concepts to life through innovative design, precision fabrication, and expert execution.
+</p>
+
+
+<a href="#contact" class="button">
+START YOUR PROJECT
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- SERVICES -->
+
+
+<section class="services">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<div class="gold-line"></div>
+
+<h2>
+WHAT WE CREATE
+</h2>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Custom Design
+</h3>
+
+<p>
+Transforming concepts into refined solutions through thoughtful design, planning, and detailed development.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Precision Fabrication
+</h3>
+
+<p>
+Combining skilled craftsmanship with modern techniques to create unique, high-quality finished products.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+Complete Execution
+</h3>
+
+<p>
+Managing each stage from initial vision through fabrication, coordination, and final installation.
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- STATEMENT -->
+
+
+<section class="statement">
+
+
+<div class="container">
+
+
+<h2>
+FROM CONCEPT
+<br>
+TO CREATION.
+</h2>
+
+
+<p>
+Steelworx.ca creates custom architectural and steel solutions that combine creativity, functionality, and craftsmanship. Every project is thoughtfully designed, carefully developed, and built with purpose.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact" class="contact">
+
+
+<div class="container contact-box">
+
+
+<h2>
+LET'S CREATE SOMETHING EXCEPTIONAL
+</h2>
+
+
+<p>
+Tell us about your vision and our team will connect with you to discuss your project.
+</p>
+
+
+
+<form action="https://formspree.io/f/mgojrabl" method="POST">
+
+
+<input 
+type="text"
+name="name"
+placeholder="Name"
+required>
+
+
+<input 
+type="text"
+name="company"
+placeholder="Company">
+
+
+<input 
+type="email"
+name="email"
+placeholder="Email"
+required>
+
+
+<input 
+type="tel"
+name="phone"
+placeholder="Phone">
+
+
+<textarea
+name="message"
+rows="6"
+placeholder="Tell us about your project..."
+required></textarea>
+
+
+<button type="submit">
+SEND REQUEST
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<div class="container footer-inner">
+
+
+<div>
+
+<strong>Steelworx.ca</strong>
+
+<br>
+
+<span>
+Custom Design • Fabrication • Execution
+</span>
+
+</div>
+
+
+<div>
+© 2026 Steelworx.ca
+</div>
+
+
+</div>
+
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
